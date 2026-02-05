@@ -3,119 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Love Story</title>
+    <title>For My Anishka</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="hearts-container"></div>
-
-    <button id="musicBtn" class="music-btn">
-        Click for music 🎵
-    </button>
+    <button id="musicBtn" class="music-btn">Click for music 🎵</button>
     <audio id="bgMusic" loop>
         <source src="music.mp3" type="audio/mpeg">
     </audio>
 
     <div class="container">
         
-        <header class="header-section fade-in">
+        <div id="slide1" class="slide active">
             <div class="mini-hearts">💕</div>
             <p class="subtitle">A LOVE STORY</p>
-            <h1 class="main-title">My Dearest<br><span class="highlight">Love</span></h1>
-            <p class="scroll-text">Scroll down to journey through our beautiful moments together...</p>
-            <div class="scroll-icon">🖱️</div>
-        </header>
-
-        <div class="timeline">
-            <h2 class="section-title fade-in">Our Journey Together</h2>
-            <p class="section-subtitle fade-in">Every moment with you has been a gift. Here's our story...</p>
-
-            <div class="card fade-in">
-                <div class="card-header">
-                    <span class="date-tag">📅 When It All Began</span>
-                    <h3>The Day We Met</h3>
-                    <p>The moment our eyes met, I knew my life was about to change forever. Add your own beautiful memory here...</p>
-                </div>
-                <div class="photo-frame">
-                    <img src="https://via.placeholder.com/400x300/ffc2d1/d63384?text=Photo+of+us+meeting" alt="Meeting Photo">
-                    <div class="heart-overlay">❤️</div>
-                </div>
-            </div>
-
-            <div class="card fade-in">
-                <div class="card-header">
-                    <span class="date-tag">☕ Our First Adventure</span>
-                    <h3>First Date Magic</h3>
-                    <p>Remember how nervous we both were? That day was the beginning of something extraordinary...</p>
-                </div>
-                <div class="photo-frame">
-                    <img src="https://via.placeholder.com/400x300/ffc2d1/d63384?text=First+date+photo" alt="First Date">
-                    <div class="heart-overlay">❤️</div>
-                </div>
-            </div>
-
-            <div class="card fade-in">
-                <div class="card-header">
-                    <span class="date-tag">✨ A Special Milestone</span>
-                    <h3>When I Knew</h3>
-                    <p>There was this moment when I looked at you and realized you're the one I want forever...</p>
-                </div>
-                <div class="photo-frame">
-                    <img src="https://via.placeholder.com/400x300/ffc2d1/d63384?text=Special+moment+photo" alt="When I Knew">
-                    <div class="heart-overlay">❤️</div>
-                </div>
-            </div>
-
-            <div class="card fade-in">
-                <div class="card-header">
-                    <span class="date-tag">✈️ Our Adventure</span>
-                    <h3>First Trip Together</h3>
-                    <p>Exploring the world with you made me realize that home isn't a place—it's you...</p>
-                </div>
-                <div class="photo-frame">
-                    <img src="https://via.placeholder.com/400x300/ffc2d1/d63384?text=Trip+photo" alt="Trip">
-                    <div class="heart-overlay">❤️</div>
-                </div>
-            </div>
-
-            <div class="card fade-in">
-                <div class="card-header">
-                    <span class="date-tag">💖 Every Day</span>
-                    <h3>Little Moments</h3>
-                    <p>It's not just the big moments, but every laugh, every hug, every 'good morning'...</p>
-                </div>
-                <div class="photo-frame">
-                    <img src="https://via.placeholder.com/400x300/ffc2d1/d63384?text=Candid+photo+of+us" alt="Little Moments">
-                    <div class="heart-overlay">❤️</div>
-                </div>
-            </div>
+            <h1 class="main-title">My Dearest<br><span class="highlight">Anishka</span></h1>
+            <button class="btn next-btn" onclick="nextSlide(2)">Start Our Journey ❤️</button>
         </div>
 
-        <div class="letter-section fade-in">
-            <div class="feather-icon">🪶</div>
-            <h2>A Letter For You</h2>
+        <div id="slide2" class="slide">
+            <div class="card-header">
+                <span class="date-tag">📅 February 15th</span>
+                <h3>The Day We Met</h3>
+            </div>
+            <div class="photo-frame">
+                <img src="meeting.jpg" alt="Meeting Photo">
+            </div>
+            <div class="text-box">
+                <p>On the day we met for the first time, February 15th, we talked about so many random things. I remember we talked about how uncle used to play tournaments and I could relate because my papa used to as well.</p>
+                <p>The way you popped up in the DMs was actually funny. We talked about so much, you told me about your hostel adventures and I was just like, "Damn, so much is happening here, this girl is cool" and I just loved how enthusiastically you were telling me those things. That was my kind of crazy.</p>
+            </div>
+            <button class="btn next-btn" onclick="nextSlide(3)">Next Memory ➡️</button>
+        </div>
+
+        <div id="slide3" class="slide">
+            <div class="card-header">
+                <span class="date-tag">✨ The Realization</span>
+                <h3>When I Knew</h3>
+            </div>
+            <div class="photo-frame">
+                <img src="knew.jpg" alt="When I Knew Photo">
+            </div>
+            <div class="text-box">
+                <p>I didn't realize it at first but my favorite place to be slowly became wherever you were. Whether we were lost in a game on Roblox or just sitting together in silence, everything felt more complete with you there.</p>
+                <p>It made me realize how much I had fallen for you. I was so nervous to tell you after all this time but finally opening up to you made that the best day I have ever had and that day changed everything for the better.</p>
+            </div>
+            <button class="btn next-btn" onclick="nextSlide(4)">Next Memory ➡️</button>
+        </div>
+
+        <div id="slide4" class="slide">
+            <div class="card-header">
+                <span class="date-tag">💖 Every Day</span>
+                <h3>Little Moments</h3>
+            </div>
+            <div class="photo-frame">
+                <img src="moments.jpg" alt="Moments Photo">
+            </div>
+            <div class="text-box">
+                <p>Every laugh, every smile, every time we talked, every time we saw each other. The times I asked you to just keep the camera on because i used to be so happy just by that and I could watch you for days and still never feel tired of it.</p>
+                <hr>
+                <p class="quote">"If solipsism is true and you are just a creation of my mind, then I must be the luckiest dreamer alive. And if it really is that way, I would love to stay in it forever."</p>
+            </div>
+            <button class="btn next-btn" onclick="nextSlide(5)">Read Letter 💌</button>
+        </div>
+
+        <div id="slide5" class="slide">
+            <h2>My Anishka,</h2>
             <div class="paper">
-                <p class="greeting">My Dearest Love,</p>
-                <p>Every day I spend with you feels like a beautiful dream I never want to wake up from. You've brought so much joy, laughter, and love into my life.</p>
-                <p>Your smile lights up my darkest days, your laughter is my favorite melody, and your love is the greatest gift I've ever received.</p>
-                <p>I fall more in love with you with each passing moment. You're not just my partner—you're my best friend, my confidant, my everything.</p>
-                <p>Thank you for being you. Thank you for choosing me. Thank you for every memory we've made and every moment yet to come.</p>
-                <p class="signature">❤️ Forever Yours</p>
+                <p>Honestly baby, life is just better with you in it. Every day by your side is like a page from a storybook I never want to close, literally the best part of both my reality and my imagination.</p>
+                <p>You make the bad days bearable and the good days incredible. It feels almost impossible to find someone who is both your love and your best friend, but I found that in you. Thanks for being my person. I am so lucky to be yours.</p>
+                <p class="signature">I LOVE YOU SO MUCH.<br>FOREVER YOURS ❤️</p>
             </div>
+            <button class="btn next-btn" onclick="nextSlide(6)">One Last Thing... 🌹</button>
         </div>
 
-        <div class="proposal-section fade-in">
+        <div id="slide6" class="slide">
             <div class="big-heart">❤️</div>
             <h2>And so...</h2>
             <h1 class="big-question">Will you be my Valentine?</h1>
             
             <p id="response-text" class="hidden-text"></p>
 
-            <div class="buttons">
+            <div class="buttons-row">
                 <button class="btn yes-btn" onclick="celebrate()">Yes! 💘</button>
-                <button class="btn no-btn" id="noBtn" onclick="plead()">No...</button>
+                <button class="btn no-btn" id="noBtn" onclick="plead()">No</button>
             </div>
         </div>
 
@@ -124,4 +97,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
